@@ -106,8 +106,8 @@ hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
-hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
-hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
+hi TabLineFill     guifg=#1B1D1E guibg=#000000
+hi TabLine         guibg=#000000 guifg=#808080 gui=none
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -120,7 +120,7 @@ if s:molokai_original == 1
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   hi Normal          guifg=#F8F8F2 guibg=#000000
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
    hi CursorLineNr    guifg=#FD971F               gui=none
@@ -136,11 +136,11 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=232
+      hi Normal                   ctermbg=0
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=232
+      hi Normal       ctermfg=252 ctermbg=0
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
@@ -169,7 +169,7 @@ if &t_Co > 255
    hi Folded          ctermfg=67  ctermbg=16
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208               cterm=none
-   hi Ignore          ctermfg=244 ctermbg=232
+   hi Ignore          ctermfg=244 ctermbg=0
    hi IncSearch       ctermfg=193 ctermbg=16
 
    hi keyword         ctermfg=161               cterm=bold
@@ -185,7 +185,7 @@ if &t_Co > 255
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
    hi PmenuSel        ctermfg=255 ctermbg=242
-   hi PmenuSbar                   ctermbg=232
+   hi PmenuSbar                   ctermbg=0
    hi PmenuThumb      ctermfg=81
 
    hi PreCondit       ctermfg=118               cterm=bold
@@ -207,18 +207,18 @@ if &t_Co > 255
    endif
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
-   hi StatusLineNC    ctermfg=244 ctermbg=232
+   hi StatusLineNC    ctermfg=244 ctermbg=0
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
-   hi Todo            ctermfg=231 ctermbg=232   cterm=bold
+   hi Todo            ctermfg=231 ctermbg=0   cterm=bold
 
    hi Typedef         ctermfg=81
    hi Type            ctermfg=81                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
-   hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
+   hi VertSplit       ctermfg=244 ctermbg=0   cterm=bold
    hi VisualNOS                   ctermbg=238
    hi Visual                      ctermbg=235
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold

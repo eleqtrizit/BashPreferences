@@ -64,9 +64,7 @@ git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
 cd $currentDir
 cp molokai_black.vim ~/.vim/colors/
 
-echo :colorscheme molokai_black >>~/.vimrc
-echo :set autoindent >> ~/.vimrc
-echo :set smartindent >> ~/.vimrc
+cp vimrc ~/.vimrc
 
 cat bashrc_append >> ~/.bashrc
 

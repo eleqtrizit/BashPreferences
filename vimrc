@@ -1,3 +1,3 @@
-:colorscheme molokai
+:colorscheme molokai_black
 :set autoindent
 :set smartindent
