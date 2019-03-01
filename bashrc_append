@@ -56,5 +56,7 @@ function parse_git_dirty {
 	fi
 }
 
+# alternate prompt
+#PS1="\n\[\e[0;37m\]\h \`parse_git_branch\`\[\e[35;1m\][\[\e[37;1m\]\w\[\e[0m\]\[\e[35;1m\]] \[\e[1;30m\]>\[\e[37;1m\] "
 
-PS1="\n\`parse_git_branch\`\[\e[35;1m\][\[\e[37;1m\]\w\[\e[0m\]\[\e[35;1m\]] \[\e[1;30m\]>\[\e[37;1m\] "
+PS1="\n\[\e[35;1m\][ \[\e[37;1m\]\h\`parse_git_branch\`\[\e[35;1m\] | \[\e[37;1m\]\w\[\e[0m\]\[\e[35;1m\] ] \[\e[1;30m\]>\[\e[37;1m\] "

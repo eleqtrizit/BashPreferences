@@ -69,5 +69,5 @@ cp vimrc ~/.vimrc
 
 cat bashrc_append >> ~/.bashrc
 
-source ~/.bashrc
+echo ${R}Type ${W}source ~/.bashrc ${R}to activate new prompt!
 
