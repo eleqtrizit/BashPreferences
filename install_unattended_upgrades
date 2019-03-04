@@ -10,8 +10,8 @@ echo -n "Enter time in format like 00:00 to 23:59\n${M}>${W}"
 read TIME
 
 #$SUDO apt install unattended-upgrades
-$SUDO echo Unattended-Upgrade::Automatic-Reboot \"true\"
-$SUDO echo Unattended-Upgrade::Automatic-Reboot-Time \"${TIME}\"
+$SUDO echo Unattended-Upgrade::Automatic-Reboot \"true\" >>/etc/apt/apt.conf.d/50unattended-upgrades
+$SUDO echo Unattended-Upgrade::Automatic-Reboot-Time \"${TIME}\" >> /etc/apt/apt.conf.d/50unattended-upgrades
 
 echo Time installed to:
 echo /etc/apt/apt.conf.d/50unattended-upgrades
