@@ -8,5 +8,5 @@ cd ~
 mkdir bin
 git clone https://github.com/eleqtrizit/BashPreferences.git ~/bin
 cd bin
-sh setup.sh
+sudo sh setup.sh
 ~~~~
