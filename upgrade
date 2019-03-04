@@ -1,0 +1,8 @@
+#!/bin/sh
+
+SUDO=`needsudo`
+
+$SUDO apt update; 
+$SUDO apt -y upgrade
+$SUDO apt -y autoremove
+$SUDO update-grub

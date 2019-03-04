@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TIME=$1
+echo "/sbin/shutdown -r now" | at ${TIME} tomorrow
+

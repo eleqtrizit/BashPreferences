@@ -1,0 +1,19 @@
+#!/bin/sh
+
+SUDO=`needsudo`
+
+W=`color 15`
+M=`color 13`
+
+echo "${W}What time do you want to schedule automatic reboots?"
+echo -n "Enter time in format like 00:00 to 23:59\n${M}>${W}"
+read TIME
+
+#$SUDO apt install unattended-upgrades
+$SUDO echo Unattended-Upgrade::Automatic-Reboot \"true\"
+$SUDO echo Unattended-Upgrade::Automatic-Reboot-Time \"${TIME}\"
+
+echo Time installed to:
+echo /etc/apt/apt.conf.d/50unattended-upgrades
+echo
+
