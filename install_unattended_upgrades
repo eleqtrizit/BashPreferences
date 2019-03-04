@@ -1,11 +1,11 @@
 #!/bin/sh
 
-Y=`color 11`
+R=`color 11`
 W=`color 15`
 M=`color 13`
 
 if [ "$(id -u)" -ne 0 ]; then
-        echo ${W}Please execute this as "${Y}sudo sh install_unattended_upgrades${W}"${W}
+        echo ${R}Please execute this as "${W}sudo sh install_unattended_upgrades${R}"${W}
         exit;
 fi
 
@@ -38,7 +38,6 @@ echo "${W}What time do you want to schedule automatic reboots?"
 echo -n "Enter time in format like 00:00 to 23:59\n${M}>${W}"
 read TIME
 checkPackage unattended-upgrades
-checkPackage vim
 
 ex -s -c '14i|        "${distro_id}:${distro_codename}-updates";' -c x /etc/apt/apt.conf.d/50unattended-upgrades
 echo "Unattended-Upgrade::Mail \"agustin@pollstar.com\";" >>/etc/apt/apt.conf.d/50unattended-upgrades
