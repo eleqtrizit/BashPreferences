@@ -3,9 +3,9 @@
 currentDir=$(pwd)
 
 chmod 755 color
-M=$(color 129)
-W=$(color 255)
-R=$(color 196)
+M=$(./color 129)
+W=$(./color 255)
+R=$(./color 196)
 
 APTUPDATED=0
 
@@ -59,6 +59,7 @@ checkPackage git
 checkPackage vim
 
 echo ${M}Installing VIM colors${W}
+rm -rf ~/.vim
 makeDir ~/.vim
 cd ~ || exit
 git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
