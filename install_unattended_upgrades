@@ -1,8 +1,8 @@
 #!/bin/sh
 
-R=`color 11`
-W=`color 15`
-M=`color 13`
+R=`./color 11`
+W=`./color 15`
+M=`./color 13`
 
 if [ "$(id -u)" -ne 0 ]; then
         echo ${R}Please execute this as "${W}sudo sh install_unattended_upgrades${R}"${W}
