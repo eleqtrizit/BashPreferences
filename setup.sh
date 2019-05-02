@@ -51,6 +51,7 @@ checkPackage() {
 
 
 echo ${M}Making scripts executable.${W}
+apt -y install aptitude
 chmod 755 get-list-of-installed-packages.sh
 chmod 755 coloroptions
 chmod 755 coloroptions_ansi

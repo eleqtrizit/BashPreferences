@@ -1,5 +1,6 @@
 #!/bin/sh
 
+APTUPDATED=0
 R=`./color 11`
 W=`./color 15`
 M=`./color 13`
