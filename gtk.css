@@ -1,0 +1,30 @@
+#whiskermenu-window {
+	background-color: #330066;
+	color: #ccc;
+}
+
+/* Make sidebar buttons match */
+#whiskermenu-window button {
+	opacity:0.90;
+	background-color: #330066;
+	color: #ccc;
+}
+#whiskermenu-window button:hover {
+	background-color: #ca3636;
+	color: #fff;
+}
+#whiskermenu-window button:checked {
+	background-color: #606060;
+	color: #fff;
+}
+
+/* Make treeview match */
+#whiskermenu-window treeview {
+	opacity:0.9;
+	background-color: #000;
+	color: #ccc;
+}
+#whiskermenu-window treeview:hover {
+	background-color: #FF00FF;
+	color: #fff;
+}
