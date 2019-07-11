@@ -51,7 +51,7 @@ checkPackage() {
 
 
 echo ${M}Making scripts executable.${W}
-apt -y install aptitude
+apt -y install aptitude imwheel
 chmod 755 get-list-of-installed-packages.sh
 chmod 755 coloroptions
 chmod 755 coloroptions_ansi
